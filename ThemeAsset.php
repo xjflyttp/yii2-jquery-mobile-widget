@@ -4,14 +4,13 @@ namespace xj\jquerymobile;
 
 use yii\web\AssetBundle;
 
-class JqueryMobileAsset extends AssetBundle {
+class ThemeAsset extends AssetBundle {
 
     public $sourcePath = '@vendor/xj/yii2-jquery-mobile-widget/assets';
     public $basePath = '@webroot/assets';
-    public $js = ['jquery.mobile.js'];
+    public $css = ['jquery.mobile.theme.css'];
     public $depends = [
-        'yii\web\JqueryAsset',
-        'xj\jquerymobile\JqueryMobileThemeAsset',
+        'xj\jquerymobile\StructureAsset',
     ];
 
 }

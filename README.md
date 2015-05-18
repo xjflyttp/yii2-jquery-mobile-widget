@@ -14,13 +14,18 @@ composer.json
 In View
 ------------
 ```php
-xj\jquerymobile\JqueryMobileAsset::register($this);
-```
+//Default
+xj\jquerymobile\ScriptAsset::register($this);
+xj\jquerymobile\ThemeFullAsset::register($this);
 
-In Assets Depends
------------
-```php
-public $depends = [
-    'xj\jquerymobile\JqueryMobileAsset',
-];
+//Part
+xj\jquerymobile\ScriptAsset::register($this);
+xj\jquerymobile\StructureAsset::register($this); //jquery.structure
+xj\jquerymobile\ThemeAsset::register($this); //Default Theme
+xj\jquerymobile\IconPngAsset::register($this); //Icon
+
+//Icon
+xj\jquerymobile\IconPngAsset::register($this);
+xj\jquerymobile\IconPngExtAsset::register($this);
+xj\jquerymobile\IconSvgAsset::register($this);
 ```
