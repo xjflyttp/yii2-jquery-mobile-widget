@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class JqueryMobileAsset extends AssetBundle {
 
-    public $sourcePath = '@vendor/yii2-jquery-mobile-widget/assets';
+    public $sourcePath = '@vendor/xj/yii2-jquery-mobile-widget/assets';
     public $basePath = '@webroot/assets';
     public $js = ['jquery.mobile.js'];
     public $depends = [
